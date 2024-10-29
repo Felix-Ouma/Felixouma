@@ -1,6 +1,6 @@
 // Navbar.js
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaInstagram, FaDribbble, FaYoutube, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaInstagram, FaDribbble, FaYoutube, FaGithub } from "react-icons/fa";
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
