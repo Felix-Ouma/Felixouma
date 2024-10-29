@@ -5,7 +5,8 @@
     align-items: center; /* Center horizontally */
     height: 100vh; /* Full viewport height */
     background-color: #f4b00b; /* Background color */
-    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
 /* Avatar Section styling */
