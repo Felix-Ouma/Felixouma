@@ -1,0 +1,27 @@
+.bitWork {
+    margin: 50px auto; /* Center horizontally with auto margins and add vertical spacing */
+    text-align: center;
+    padding: 20px;
+    max-width: 700px; /* Set maximum width */
+  }
+  
+  .tittles {
+    font-size: 2.5rem; /* Updated font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem; /* Updated font size */
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .arrowDown {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    transform: rotate(45deg);
+    margin-top: 10px;
+  }
+  

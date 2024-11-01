@@ -6,13 +6,19 @@
     height: 100vh; /* Full viewport height */
     background-color: #f4b00b; /* Background color */
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: hidden; /* Prevent vertical scrolling */
+    overflow-y: hidden; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+.container::-webkit-scrollbar { /* Hide scrollbar in Chrome, Safari, and Opera */
+    display: none;
 }
 
 /* Avatar Section styling */
 .avatarSection {
     width: 100%; /* Full width */
-    height: 300px; /* Adjust height as needed */
+    height: 100%; /* Adjust height as needed */
     background-image: url('https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730194533/3d-portrait-people_ektuqn.jpg');
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */

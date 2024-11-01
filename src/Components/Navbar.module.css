@@ -1,99 +1,108 @@
-/* Navbar.module.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-    background-color: white;
-    font-family: Arial, sans-serif;
-    position: fixed; /* Make navbar fixed */
-    top: 0; /* Stick to the top */
-    left: 0; /* Align to the left edge */
-    width: 100%; /* Full-width */
-    z-index: 1000; /* Ensure it stays on top of other content */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
-  }
-  
-  .leftSection {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .leftSection a {
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-  }
-  
-  .leftSection a:hover {
-    color: #0073e6;
-  }
-  
-  .active {
-    font-weight: bold;
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.leftSection {
+  display: flex;
+  gap: 20px;
+}
+
+.leftSection a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.leftSection a:hover {
+  color: #0073e6;
+  background-color: rgba(0, 115, 230, 0.1);
+  border-radius: 5px;
+}
+
+.active {
+  font-weight: bold;
+  color: #0073e6;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rightSection .icon {
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.rightSection .icon:hover {
+  color: #0073e6;
+}
+
+.menuToggle {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block; /* Show only on mobile screens */
+    font-size: 24px;
+    cursor: pointer;
     color: #003366;
-    display: flex;
-    align-items: center;
+    margin-right: 20px; /* Margin for visibility */
+    padding-right: 10px; /* Additional spacing */
   }
-  
+
+  .logo {
+    flex: 1;
+  }
+
   .rightSection {
     display: flex;
-    gap: 10px;
+    order: 1;
   }
-  
-  .rightSection .icon {
-    font-size: 20px;
-    color: black;
+
+  .leftSection {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    gap: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: max-height 3s ease, opacity 3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
   }
-  
-  .rightSection .icon:hover {
-    color: #0073e6;
+
+  .leftSection.show {
+    display: flex;
+    max-height: 300px; /* Adjust based on content */
+    opacity: 1;
   }
-  
-  /* Hide the menu icon on desktop */
-  .menuToggle {
-    display: none;
-  }
-  
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    /* Show the menu toggle button only on mobile */
-    .menuToggle {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-      color: #003366;
-    }
-  
-    /* Keep logo and social icons in one line */
-    .navbar {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    /* Hide the navigation links initially on mobile */
-    .leftSection {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 50px; /* Adjust top to below the navbar */
-      left: 0;
-      width: 100%;
-      background-color: white;
-      padding: 10px;
-      gap: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  
-    /* Show the navigation links when the menu is open */
-    .leftSection.show {
-      display: flex;
-    }
-  }
-  
+}

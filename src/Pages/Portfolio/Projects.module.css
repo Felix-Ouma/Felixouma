@@ -1,0 +1,43 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .project {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .projectTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .projectDescription {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .project {
+      width: 100%;
+    }
+  }
+
+  .images{
+    overflow: hidden;
+    border-radius: 8px;
+  }
