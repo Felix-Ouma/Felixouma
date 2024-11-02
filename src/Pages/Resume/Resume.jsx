@@ -5,6 +5,7 @@ import Footer from '../../Components/Footer'
 import ResearchProcess from './ResearchProcess'
 import Research from './Research'
 import ProfesionalExperience from './ProfesionalExperience'
+import Learning from './Learning'
 
 const Resume = () => {
   return (
@@ -14,6 +15,7 @@ const Resume = () => {
     <ResearchProcess />
     <Research />
     <ProfesionalExperience />
+    <Learning />
     <Footer />
     </>
   )
