@@ -1,10 +1,12 @@
 import React from "react";
 import { FaLinkedin, FaDribbble, FaGithub, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import styles from "./Footer.module.css";
+import WhatsAppButton from "./WhatsAppButton";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <WhatsAppButton />
       <div className={styles.socialLinks}>
         <a href="https://www.linkedin.com/in/felixouma" target="_blank" rel="noopener noreferrer" className={styles.icon}>
           <FaLinkedin />
