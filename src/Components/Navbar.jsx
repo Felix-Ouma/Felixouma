@@ -1,5 +1,7 @@
+// Navbar.js
 import React, { useState } from 'react';
 import { FaTwitter, FaLinkedin, FaInstagram, FaDribbble, FaYoutube, FaGithub, FaBars } from "react-icons/fa";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -11,14 +13,16 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Felix Ouma</div>
+      <div className={styles.logo}>
+        <Link to="/" className={styles.logo}>Felix Ouma</Link> {/* Link for Home */}
+      </div>
 
       <div className={`${styles.leftSection} ${menuOpen ? styles.show : ''}`}>
-        <a href="#home">Home</a>
-        <a href="#portfolio" className={styles.active}>Portfolio</a>
-        <a href="#resume">Resume</a>
-        <a href="#tutorials">Tutorials</a>
-        <a href="#contacts">Contacts</a>
+        <Link to="/">Home</Link> {/* Link for Home */}
+        <Link to="/portfolio" className={styles.active}>Portfolio</Link> {/* Link for Portfolio */}
+        <Link to="/resume">Resume</Link>
+        <Link to="/tutorials">Tutorials</Link>
+        <Link to="/contacts">Contacts</Link>
       </div>
 
       <div className={styles.rightSection}>

@@ -16,7 +16,7 @@ const Home = () => {
         <p className={styles.description}>
           Helping businesses build innovative, user-centric, design-led software.
         </p>
-        <Link to="/portfolio"> {/* Link to the Portfolio page */}
+        <Link to="/portfolio"> 
           <button className={styles.button}>Portfolio & Resume</button>
         </Link>
         <div className={styles.socialLinks}>

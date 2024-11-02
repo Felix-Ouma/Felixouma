@@ -15,20 +15,18 @@
   margin-bottom: 10px;
 }
 
+.profileImage {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 300px; /* Set a max width for the image */
+  border-radius: 8px; /* Optional: round the corners */
+  margin: 20px 0; /* Add some margin around the image */
+}
+
 .description {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 20px;
-}
-
-/* Styled quote */
-.quote {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #555; /* Optional: Adjust color as needed */
-  margin-top: 20px;
-  border-left: 4px solid #888;
-  padding-left: 16px;
 }
 
 /* Fade out effect */
@@ -38,5 +36,4 @@
 
 .content {
   z-index: 2; /* Higher z-index to scroll over the .bitWork section */
-  position: relative;
 }
