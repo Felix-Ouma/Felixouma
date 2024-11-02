@@ -4,16 +4,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding:0 0 20px 0;
   }
   
   /* Center button styling */
   .centerButton {
     background-color: #333; /* Use the same color as the heading */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 24px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }

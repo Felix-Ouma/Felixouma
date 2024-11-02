@@ -1,3 +1,5 @@
+/* QuickProfile.module.css */
+
 .bitWork {
   position: sticky;
   top: 0;
@@ -32,6 +34,7 @@
 /* Fade out effect */
 .fadeOut {
   opacity: 0.05;
+  pointer-events: none; /* Make component inactive when faded */
 }
 
 .content {

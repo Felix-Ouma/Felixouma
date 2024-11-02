@@ -1,18 +1,40 @@
 /* Learning.module.css */
 .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  gap: 15px;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px;
+    overflow-x: scroll;
   }
   
   .logo {
-    max-width: 100px;
-    height: auto;
-    transition: transform 0.3s ease;
+    margin-right: 15px;
   }
-  
-  .logo:hover {
-    transform: scale(1.1);
-  }
-  
+}
