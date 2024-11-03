@@ -1,0 +1,20 @@
+.bitWork {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.tittles {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Removed fading effect and opacity transition */

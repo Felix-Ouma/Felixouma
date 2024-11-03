@@ -7,7 +7,7 @@
   padding: 20px;
   max-width: 900px;
   text-align: center;
-  transition: opacity 1s ease; /* Smooth fading transition */
+  transition: opacity 5s ease; /* Smooth fading transition */
   z-index: 1; /* Ensure it's below the scrolling content */
 }
 
@@ -33,7 +33,7 @@
 
 /* Fade out effect */
 .fadeOut {
-  opacity: 0.05;
+  opacity: 0;
   pointer-events: none; /* Make component inactive when faded */
 }
 

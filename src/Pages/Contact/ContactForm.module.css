@@ -1,0 +1,82 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .contactForm textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .submitButton {
+    width: auto; /* Button width fits the content */
+    padding: 10px 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centers the button within the form */
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments for mobile screens */
+  @media (max-width: 600px) {
+    .contactForm {
+      padding: 15px;
+      max-width: 90%; /* Reduces form width to fit within mobile screens */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .contactForm label {
+      font-size: 14px; /* Adjusts font size for mobile readability */
+    }
+  
+    .contactForm input,
+    .contactForm textarea {
+      font-size: 14px; /* Smaller font size for mobile screens */
+      padding: 8px;
+    }
+  
+    .submitButton {
+      padding: 8px 20px; /* Smaller padding for mobile screen */
+      font-size: 14px;
+    }
+  }
+  
