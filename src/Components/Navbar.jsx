@@ -21,7 +21,6 @@ const Navbar = () => {
         <Link to="/">Home</Link> {/* Link for Home */}
         <Link to="/portfolio" className={styles.active}>Portfolio</Link> {/* Link for Portfolio */}
         <Link to="/resume">Resume</Link>
-        <Link to="/tutorials">Tutorials</Link>
         <Link to="/contacts">Contacts</Link>
       </div>
 
