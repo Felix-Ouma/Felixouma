@@ -3,13 +3,7 @@ import styles from './Projects.module.css';
 
 function Projects() {
   const projects = [
-    {
-      title: "Senje's Cuisines Food Delivery App Case Study",
-      description: "Designed an app to help users find and order delicious food from local restaurants.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
-      alt: "Senje's Cuisines Food Delivery App Case Study",
-      url: "https://boltshift.vercel.app/",
-    },
+
     {
       title: "Boltshift UI/UX Showcase",
       description: "Curated a collection of designs for a cross-platform e-commerce experience.",
@@ -17,55 +11,68 @@ function Projects() {
       alt: "Boltshift UI/UX Showcase",
       url: "https://boltshift.vercel.app/",
     },
-    {
-      title: "Building a Premier Cross-platform eCommerce Experience",
-      description: "Research, Design, & Engineering Case Study",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
-      alt: "Building a Premier Cross-platform eCommerce Experience",
-      url: "https://boltshift.vercel.app/",
-    },
-    {
-      title: "Mawingu Coffee Website Design",
-      description: "Created a responsive website for Mawingu Coffee to showcase their products and services.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
-      alt: "Mawingu Coffee Website Design",
-      url: "https://boltshift.vercel.app/",
-    },
+    
     {
       title: "Iviti Crude Oil Refineries Website",
       description: "Developed a single-page website with sections for Iviti Crude Oil Refineries.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
+      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730791672/ivitiPage_ytky9v.jpg",
       alt: "Iviti Crude Oil Refineries Website",
-      url: "https://boltshift.vercel.app/",
+      url: "https://ivitioilrefinery.com/",
     },
     {
-      title: "E-commerce Product Filter Component",
-      description: "Built a product filter component for an e-commerce site, including categories, brands, and price ranges.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
-      alt: "E-commerce Product Filter Component",
-      url: "https://boltshift.vercel.app/",
+      "title": "Little Lemon Restaurant - Fresh Mediterranean Flavors",
+      "description": "Experience the vibrant, authentic Mediterranean cuisine at Little Lemon Restaurant.",
+      "image": "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730793403/LittleLemon_o3tqvh.jpg", 
+      "alt": "Little Lemon Restaurant - Fresh Mediterranean Flavors",
+      "url": "https://little-lemon-restaurant-iota.vercel.app/"
     },
+
     {
-      title: "Responsive Navbar",
+      title: "Mawingu Coffee Website Design",
+      description: "Created a responsive website for Mawingu Coffee to showcase their products and services.",
+      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730792299/Mawingu_u9blg2.jpg",
+      alt: "Mawingu Coffee Website Design",
+      url: "https://demo.mawingucoffee.com/"
+    },
+    
+    {
+      "title": "eCommerce Filter - Refine Your Shopping Experience",
+      "description": "An intuitive eCommerce filtering system to help users easily find products by category, brand, and price range.",
+      "image": "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730796365/Filter_sfdiwq.jpg",
+      "alt": "eCommerce Filter - Refine Your Shopping Experience",
+      "url": "https://ecomerece-filter.vercel.app/"
+    },    
+    {
+      title: "EmroseCare Services",
       description: "Implemented a responsive navigation bar with mobile-friendly styling.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
+      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730792778/Emrose_zlqjq4.jpg",
       alt: "Responsive Navbar",
-      url: "https://boltshift.vercel.app/",
+      url: "https://emrosecareservices.com/",
     },
     {
-      title: "Sizzle Africa SEO Strategy",
-      description: "Executed a comprehensive SEO strategy to improve search rankings and drive traffic for Sizzle Africa.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
-      alt: "Sizzle Africa SEO Strategy",
-      url: "https://boltshift.vercel.app/",
+      "title": "Explore the World - Felix Ouma's Travel Website",
+      "description": "Discover breathtaking destinations and travel tips with Felix Ouma's travel website.",
+      "image": "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730793755/Travel_gxxj39.jpg",
+      "alt": "Explore the World - Felix Ouma's Travel Website",
+      "url": "https://felix-ouma.github.io/Travel-website/index.html#About"
     },
+
     {
-      title: "Portfolio Website",
-      description: "Designed and developed my own portfolio website to showcase personal projects and skills.",
-      image: "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730496732/File_Cover_elwr6m.png",
-      alt: "Portfolio Website",
-      url: "https://boltshift.vercel.app/",
+      "title": "University Web Tutorial - Learn and Grow",
+      "description": "A comprehensive guide for students to explore academic resources and university life tips.",
+      "image": "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730794601/University_u4kncr.jpg",
+      "alt": "University Web Tutorial - Learn and Grow",
+      "url": "https://university-web-tutorial-git-main-felix-ouma.vercel.app/"
     },
+       
+    {
+      "title": "Felix Ouma - Portfolio",
+      "description": "Explore Felix Ouma's portfolio showcasing projects in web development and design.",
+      "image": "https://res.cloudinary.com/dcmbm1sgc/image/upload/v1730194533/3d-portrait-people_ektuqn.jpg",
+      "alt": "Felix Ouma - Portfolio",
+      "url": "https://felixouma.vercel.app/"
+    }
+    
   ];
 
   return (
