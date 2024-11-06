@@ -11,6 +11,7 @@ const ContactForm = () => {
     message: '',
     linkedin: ''
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,6 +20,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs.send(
       'service_jt6p6xp',      // Replace with your EmailJS Service ID
@@ -35,12 +37,13 @@ const ContactForm = () => {
     )
     .then((result) => {
       console.log('Email successfully sent!', result.status, result.text);
-      alert('Message sent successfully!');
+      alert(`Dear ${formData.fullName}, message successfully sent to Felix Ouma!`);
     })
     .catch((error) => {
       console.error('Failed to send email:', error);
-      alert('Failed to send message. Please try again later.');
-    });
+      alert(`Dear ${formData.fullName}, message not sent. Check your internet and try again. Thank you.`);
+    })
+    .finally(() => setLoading(false));
   };
 
   return (
@@ -81,7 +84,7 @@ const ContactForm = () => {
       </label>
 
       <label>
-        Email Subject *
+        Subject *
         <input
           type="text"
           name="subject"
@@ -114,7 +117,13 @@ const ContactForm = () => {
         />
       </label>
 
-      <button type="submit" className={styles.submitButton}>Submit</button>
+      <button 
+        type="submit" 
+        className={`${styles.submitButton} ${loading ? styles.loading : ''}`}
+        disabled={loading}
+      >
+        {loading ? 'Sending...' : 'Submit'}
+      </button>
     </form>
   );
 };

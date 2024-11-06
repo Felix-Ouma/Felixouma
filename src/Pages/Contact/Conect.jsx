@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Conect.module.css';
+import CvButton from '../Resume/CvButton';
 
 function Conect () {
   return (
@@ -9,6 +10,7 @@ function Conect () {
       <p className={styles.description}>
       I'm always excited to work on the next big product! I'm open to full-time offers and long-term contracts., Please feel free to reach out </p>  
     </div>
+    <CvButton />
   </>
   );
 }

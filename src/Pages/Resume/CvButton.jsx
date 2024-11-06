@@ -9,7 +9,7 @@ const CvButton = () => {
   return (
     <div className={styles.buttonContainer}>
       <button className={styles.centerButton} onClick={handleDownload}>
-        Download CV
+        View My Resume
       </button>
     </div>
   );

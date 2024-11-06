@@ -79,4 +79,48 @@
       font-size: 14px;
     }
   }
+
+  .submitButton {
+    width: auto;
+    padding: 10px 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0d3b66;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    position: relative; /* Added for loading circle positioning */
+  }
+  
+  .submitButton:hover {
+    background-color: #0b5295;
+  }
+  
+  .submitButton.loading {
+    pointer-events: none;
+    background-color: #0d3b66;
+    color: transparent;
+  }
+  
+  .submitButton.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #28a745;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
   
