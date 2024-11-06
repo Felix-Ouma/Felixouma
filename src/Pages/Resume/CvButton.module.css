@@ -1,7 +1,7 @@
 /* Center button container */
 .buttonContainer {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     margin-top: 20px;
     padding:0 0 20px 0;
@@ -9,17 +9,17 @@
   
   /* Center button styling */
   .centerButton {
-    background-color: #333; /* Use the same color as the heading */
-    color: #fff;
-    padding: 12px 24px;
+    background-color: #0d3b66; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 10px;
-    font-size: 24px;
+    border-radius: 0.5rem; /* Rounded corners */
     cursor: pointer;
+    font-size: 1rem; /* Consistent size */
     transition: background-color 0.3s ease;
   }
   
   .centerButton:hover {
-    background-color: #555; /* Slightly lighter on hover */
+    background-color: #0b5295; /* Slightly lighter on hover */
   }
   
