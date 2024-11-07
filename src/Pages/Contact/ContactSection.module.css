@@ -1,0 +1,59 @@
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contactItem {
+    background-color: #e0e6e9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 200px; /* Ensures each card is at least 200px wide and adjusts responsively */
+    max-width: 220px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contactItem:hover {
+    background-color: #f4b00b; /* Warm yellow hover effect */
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+  }
+  
+  .contactItem h4 {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .contactItem p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #0d3b66 ; /* Icon color */
+    margin-bottom: 10px;
+    transition: 0.3s ease-in;
+  }
+
+  .icon:hover{
+    color: #0e66b9 ;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .contactItem {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
